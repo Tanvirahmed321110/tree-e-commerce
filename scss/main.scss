@@ -1,0 +1,213 @@
+// google font import link
+@import './daily-section';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,500&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Palanquin&family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,500&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Palanquin&family=Poppins:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+// customize in bootstrap 
+$font-family-sans-serif:'Poppins', sans-serif;
+
+// bootstrap import
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+//  customize css
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #e9e5e5;
+    width: 100vw;
+    height: 100vh;
+}
+
+span{
+   font-size: 20px;
+}
+
+.li-divide{
+    width: 1px;
+    height: 16px;
+    background-color: rgb(170, 184, 184);
+}
+
+// simple dropdown in nav
+.simple-dropdown {
+    position: relative;
+}
+.simple-dropdown:hover ul{
+    display: block;
+}
+.simple-dropdown ul li{
+    list-style: none;
+    border-bottom: 1px solid red;
+    margin-top: 4px;
+}
+.simple-dropdown ul li:hover{
+    border-bottom: 2px solid black;
+}
+.simple-dropdown ul{
+    background-color: aliceblue;
+    display: none;
+    width: 110px;
+    // border: 5px solid;
+    // border-image: linear-gradient(rgb(163, 147, 147),purple) 0 100%;
+    box-shadow: 0 2px 0 2px ;
+    padding: 10px;
+    position: absolute;
+    z-index: 111;
+    cursor: pointer;   
+}
+
+
+
+.big-dropdown{
+    position: relative;
+}
+.sub{
+    display: none;
+}
+.sub li{
+    // list-style: none;
+    color: #5f5f5f;
+    font-size: 14px;
+    margin-top: 9px;
+}
+.sub li:hover{
+    border-bottom: 1px solid brown;
+    
+}
+
+
+.big-dropdown:hover .sub{
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgb(192, 191, 191);
+    border-radius: 6px;
+    background-color: rgb(255, 252, 252);
+    width: 300px;
+    border: 1px solid gold;
+    position: absolute;
+    z-index: 100;
+}
+
+.nav-link:hover{
+    color: blue;
+}
+
+
+
+// slider style start
+#carousel-main .carousel-inner{
+    margin-top: 40px;
+    height: 450px;
+}
+
+.carousel-control-prev{
+    left: -120px;
+}
+.carousel-control-next{
+    right: -120px;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    filter: invert(100%);
+}
+
+.carousel-item-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+}
+.carousel-item-sub-text{
+    margin-top: -45px;
+    padding-left: 25px;
+}
+.carousel-item-sub-text h1{
+    font-size: 64px;
+    margin-top: 25px;
+    margin-bottom: 29px;
+    letter-spacing: .3px;
+    font-weight: 400;
+}
+.carousel-item-sub-text button{
+    padding: 12px 48px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(92, 72, 72);
+}
+
+
+
+
+
+// feature-main start 
+.feature-main{
+    border: 5px solid white;
+    width: 100%;
+    margin: 60px 0 60px;
+    overflow: hidden;
+    position: relative;
+    
+    .feature-text{
+        position: absolute;
+        top: 33px;
+        left: 10px;
+        
+        h3{
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            font-size: 34px;
+            color: #617d05;
+            line-height: 33px;
+        }
+        h4{
+            color: #010101 ;
+            font-size: 18px;
+            margin-bottom: 50px;
+            
+            span{
+                font-family: Cormorant Garamond;
+                color: #617d05;
+                font-size:20px;
+                line-height: 20px;
+            }
+ 
+        }
+        
+        .right-arrow{
+            display: inline-block;
+            color: #617d05;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            border: 2px solid  #617d05;
+            background-color: red($color: #000000);
+            text-align: center;
+            padding-top: 3%;
+        }   
+        a > i{
+           line-height: 32px;
+        }
+    }
+    
+    .feature-image img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: scale(1);
+        transition: all .4s ease-in-out;
+    }
+   &:hover .feature-image img{
+    transform: scale(1.2);
+   }
+}
