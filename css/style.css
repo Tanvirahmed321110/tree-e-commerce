@@ -12109,6 +12109,15 @@ span {
   border-bottom: 1px solid brown;
 }
 
+#sub-dropdown-page .sub {
+  background-color: #adaaaa;
+  color: white;
+}
+#sub-dropdown-page .sub li {
+  list-style: none;
+  color: white;
+}
+
 .big-dropdown:hover .sub {
   display: flex;
   gap: 25px;

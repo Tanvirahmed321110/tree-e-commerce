@@ -84,6 +84,21 @@ span{
     
 }
 
+#sub-dropdown-page{
+    .sub{
+        background-color:#adaaaa;
+        color: white;
+        li{
+            list-style: none;
+            color: white;
+        }
+    }
+}
+
+
+
+
+
 
 .big-dropdown:hover .sub{
     display: flex;
