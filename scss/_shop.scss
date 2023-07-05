@@ -150,7 +150,7 @@
 //  ---  shop items all shop-items-container
 
 .shop-items-container{
-    
+    margin-bottom:100px;
     .shop-item-image{
         overflow: hidden;
         position: relative;
@@ -159,6 +159,8 @@
         img{
             width: 100%;
             height: 350px;
+            object-fit:cover;
+            object-position: center;
         }
         .shop-hover-image{
             position: absolute;

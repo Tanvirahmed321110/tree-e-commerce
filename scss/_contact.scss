@@ -1,0 +1,121 @@
+
+.map{
+    margin-top: 55px;
+}
+
+.contact-sidebar-main{
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #F3F3F3;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .phone{
+        display: flex;
+        margin-left: 1%;
+        margin-bottom: 25px;
+        text-align: left;
+        
+       .phone-icon{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border: 1px solid rgb(26, 38, 75);
+        border-radius: 55%;
+        margin-right: 20px;
+       }
+       
+    }
+    .Number{
+        color: rgb(74, 91, 92);
+        font-size: 15px;
+        letter-spacing: .4px;
+       }
+       
+       .follow-us{
+        text-align: center !important;
+        
+        a{ display: inline-block;
+            margin-right: 13px;
+            color: darkcyan;
+        }
+       }
+}
+
+.contact-form{
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 550px;
+    
+    .container{
+        width: 90%;
+        
+        form{
+            width: 90%;
+            box-shadow: none;
+            
+            .contact-input-same{
+               display: flex;
+               gap: 20px;
+               
+               input{
+                width: 97%;
+                outline: none;
+                border:none;
+                height: 40px;
+                padding: 0 22px;
+                background-color: #F3F3F3;
+                border: 1px solid rgb(216, 211, 211);
+                margin-bottom: 30px;
+               }
+            }
+            
+           .subject{ width: 100%;
+            outline: none;
+            border:none;
+            height: 40px;
+            padding: 0 22px;
+            background-color: #F3F3F3;
+            border: 1px solid rgb(216, 211, 211);
+            margin-bottom: 30px;
+           }
+           
+           textarea{
+            width: 100%;
+            outline: none;
+            border:none;
+            height: 200px;
+            padding: 0 22px;
+            background-color: #F3F3F3;
+            border: 1px solid rgb(216, 211, 211);
+            margin-bottom: 30px;
+           }
+           
+        }
+        
+        .submite-btn{
+            width: 140px;
+            height: 45px;
+            background-color: rgb(73, 58, 58);
+            color: rgb(255, 248, 248);
+            letter-spacing: .6px;
+            
+            &:hover{
+                background-color: blueviolet;
+                transition: all .5s linear;
+            }
+           }
+    }
+    
+    h3{
+        padding: 25px;
+        color: darkblue;
+    }
+}
