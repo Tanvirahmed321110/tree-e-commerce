@@ -423,6 +423,166 @@ form .submite-btn:hover {
   background-color: red;
 }
 
+.sidebar-tags {
+  width: 90%;
+}
+.sidebar-tags button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: #333333;
+  background-color: #ebeaea;
+  padding: 4px 9px;
+  margin: 8px 6px;
+  border-radius: 50px;
+}
+
+.shop-head {
+  height: 40px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  width: 100%;
+}
+.shop-head .shop-head-left {
+  display: flex;
+  width: 60%;
+}
+.shop-head .shop-head-left button {
+  width: 180px;
+  text-align: left;
+  padding-left: 15px;
+  background-color: white;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(233, 230, 230);
+  color: #8a8787;
+  display: inline-block;
+}
+.shop-head .shop-head-left button .fa-angle-down {
+  padding-left: 45%;
+}
+.shop-head .shop-head-left p {
+  margin-left: 11%;
+  color: #8a8787;
+  font-size: 15px;
+}
+.shop-head .shop-head-right {
+  margin: 0;
+  width: 20%;
+  text-align: right;
+}
+.shop-head .shop-head-right a {
+  margin-left: 9%;
+  font-size: 20px;
+  color: #666161;
+  font-weight: 500;
+}
+
+.shop-items-container .shop-item-image {
+  overflow: hidden;
+  position: relative;
+}
+.shop-items-container .shop-item-image img {
+  width: 100%;
+  height: 350px;
+}
+.shop-items-container .shop-item-image .shop-hover-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(20px);
+  transition: all 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+.shop-items-container .shop-item-image .shop-item-tag {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  background-color: rgb(167, 90, 240);
+  color: white;
+  width: 55px;
+  height: 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 111;
+  text-align: center;
+  display: inline-block;
+  padding: 2px 11px;
+}
+.shop-items-container .shop-item-image .shop-item-tag span {
+  border-radius: 4px;
+  font-size: 14px;
+}
+.shop-items-container .shop-item-image .shop-item-select {
+  background-color: rgb(167, 90, 240);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  width: 100%;
+  z-index: 111;
+  transform: translateY(20px);
+  transition: all 1s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.shop-items-container .shop-item-image .shop-item-select button {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgb(167, 90, 240);
+  outline: none;
+}
+.shop-items-container .shop-item-image .shop-item-select button:hover {
+  background-color: rgb(255, 153, 153);
+  transition: all 1s linear;
+  color: black;
+}
+.shop-items-container .shop-item-data {
+  text-align: center;
+  margin-top: 10px;
+}
+.shop-items-container .shop-item-data p {
+  color: #201d1d;
+  margin-bottom: 5px;
+}
+.shop-items-container .shop-item-data a {
+  text-decoration: none;
+  color: rgb(201, 201, 45);
+}
+.shop-items-container .shop-item-data .shop-item-price {
+  margin-top: 5px;
+}
+.shop-items-container .shop-item-data .shop-item-price p {
+  font-weight: 600;
+  font-size: 16px;
+}
+.shop-items-container .shop-item-data .shop-item-price p span {
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 500;
+  color: #979595;
+}
+.shop-items-container:hover .shop-item-select {
+  transform: translateY(0px);
+  transition: all 1s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+.shop-items-container:hover .shop-hover-image {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 20;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 1s ease-in-out;
+  visibility: visible;
+}
+
 /*!
  * Bootstrap  v5.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
